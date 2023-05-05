@@ -13,4 +13,5 @@ stop:    Stop the application with the command kill XXXXX where XXXXX is the Pro
 clean:   Stop the application. Delete the binary awesome-api and the log file awesome-api.log.
 test:    Check expected behaviour of the app.
 lint:    Static linting on go files using golangci-lint.
+unit-tests:      execute (successfully) the Golang unit tests.
 help:    Shows this help messages.
