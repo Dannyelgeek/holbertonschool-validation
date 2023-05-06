@@ -1,5 +1,6 @@
-build:	check ## Generate the website from the markdown and configuration files in the directory dist/ and compile the source code of the application to a binary named awesome-api.
+build:	## Generate the website from the markdown and configuration files in the directory dist/ and compile the source code of the application to a binary named awesome-api.
 		make lint
+		make check
 		go get github.com/gorilla/mux
 		go build
 		hugo
