@@ -5,7 +5,7 @@ on:
     - cron: "0 21 * * *"
 jobs:
   module3_task2:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository code
