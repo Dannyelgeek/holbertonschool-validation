@@ -15,7 +15,7 @@ jobs:
       - run: cd module3_task2 && make test
       - run: cd module3_task2 && make help
       - run: cd module3_task2 && make package
-      - uses: actions/upload-artifact@v3
-        with:
-        name: awesome-website
-        path: ./module3_task2/awesome-website.zip
+        uses: actions/upload-artifact@v3
+          with:
+            name: awesome-website
+            path: ./module3_task2/awesome-website.zip
