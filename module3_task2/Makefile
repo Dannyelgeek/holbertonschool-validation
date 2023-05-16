@@ -43,7 +43,8 @@ validate:	## Validate the file ./dist/index.html by using the command line Holbe
 		-@./w3c_validator.py ./dist/index.html
 
 package:	## Creates a zip file that contains the needed files to deploy the website.
-		zip awesome-website.zip awesome-api ./dist/
+		@make build
+		@zip awesome-website.zip awesome-api ./dist/
 
 help:   ## Shows this help messages.
 		@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
